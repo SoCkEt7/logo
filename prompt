@@ -1,0 +1,38 @@
+Crée un logo vectoriel SVG haute précision pour une entreprise technologique nommée "[NOM DE L'ENTREPRISE]" avec les spécifications techniques suivantes:
+
+1. ÉLÉMENTS CONSTITUTIFS:
+   - Symbole central: Élément géométrique abstrait utilisant des lignes/courbes fines (épaisseur 2-4px) et un élément central circulaire
+   - Typographie: Nom de l'entreprise en police sans-serif légère (poids 200-300), avec espacement de lettres précis (0.5-0.8em)
+   - Structure: Alignement vertical parfait avec le symbole au-dessus du texte
+
+2. PALETTE CHROMATIQUE PRÉCISE:
+   - Dark theme: 
+     * Fond: Dégradé de bleu-noir (#050810 à #0f1526)
+     * Élément bleu: Dégradé (#62b5ff à #3d9af0)
+     * Élément violet: Dégradé (#a889fb à #845ef7)
+     * Texte: Blanc pur à gris très clair (#ffffff à #f8f9fa)
+   
+   - Light theme:
+     * Fond: Transparent
+     * Élément bleu: Dégradé (#2196f3 à #0d6efd)
+     * Élément violet: Dégradé (#7c4dff à #6200ea)
+     * Texte: Noir à gris anthracite (#212529 à #343a40)
+
+3. EFFETS VISUELS SUBTILS:
+   - Ombres: Utiliser feDropShadow avec stdDeviation précis (0.5-0.7)
+   - Opacité: Variations subtiles (0.7-1.0) pour créer de la profondeur
+   - Technique de superposition: Cercles concentriques avec opacités et remplissages variés
+
+4. VARIANTES REQUISES:
+   - Version complète: Symbole + nom complet
+   - Version icône: Uniquement le symbole, optimisé pour favicon
+   - Version dark/light: Adaptations précises des couleurs sans modifier la structure
+   - Version monochrome: Adaptation en une seule couleur pour usages spécifiques
+
+5. OPTIMISATIONS TECHNIQUES:
+   - ViewBox correctement défini pour éviter tout espace superflu
+   - Organisation par groupes <g> avec transformations précises
+   - Utilisation d'ID uniques pour tous les gradients et filtres
+   - Code SVG propre et optimisé sans éléments redondants
+
+Créer ce logo avec une précision mathématique et une attention méticuleuse aux détails techniques, géométriques et visuels.
