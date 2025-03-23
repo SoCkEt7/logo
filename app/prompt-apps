@@ -1,107 +1,73 @@
-Créer un logo SVG premium pour mon application "{app_name}" qui {description}.
+# Prompt pour Générer un Logo SVG Premium
 
-=== SPÉCIFICATIONS VISUELLES ===
+Créer un logo SVG premium pour mon application "{nom_application}" qui {description_fonction}.
 
-COMPOSITION:
+## SPÉCIFICATIONS VISUELLES
+
+### COMPOSITION
 - Format: SVG vectoriel responsive (viewBox="0 0 500 200")
-- Fond: Rectangle arrondi (#1a1a2e, opacité 0.92, radius 10px)
-- Structure: Pictogramme à gauche + Nom à droite + Signature CodeQuantum discrète
+- Structure: Pictogramme minimaliste + Nom en typographie élégante + Signature discrète
+- Intégration: Tous les éléments doivent former une unité visuelle cohérente
 
-PICTOGRAMME:
-- Position: Centré à x=145, y=100
-- Taille: Cercle de base r=28px
-- Fond: Dégradé radial (#0a394a à #2587a1)
-- Design intérieur:
-  * Lignes minimalistes évoquant la fonction de l'app
-  * Épaisseur de trait: 1.5-2px
-  * Couleurs principales: #36D1DC, #48b1ed, #5B86E5
-  * Forme abstraite ou N stylisé selon pertinence
+### PICTOGRAMME
+- Style: Forme géométrique minimaliste inspirée par la fonction de l'application
+- Couleurs: Palette de bleus/turquoises (#36D1DC, #48b1ed, #5B86E5)
+- Fond: Cercle avec dégradé subtil (#0a394a à #2587a1)
+- Détails:
+  * Traits fins (1.5-2px) et épurés
+  * Formes abstraites qui évoquent la fonction de l'app
+  * Points d'accent et détails géométriques minimes
 - Animation:
-  * Flottement vertical très subtil (±0.6px)
-  * Pulsation légère des éléments (±10% taille/opacité)
-  * Durée longue: 5-8 secondes
+  * Mouvement subtil de flottement vertical (±0.6px)
+  * Légère pulsation des éléments (variation 5-10%)
+  * Rythme lent (5-8 secondes)
 
-TYPOGRAPHIE:
-- Police: 'Lato', 'Helvetica', sans-serif (poids 300)
-- Position: x=185, y=100 (aligné avec le pictogramme)
-- Taille: 44px avec letter-spacing 1.5px
-- Couleur: Dégradé linéaire (#36D1DC → #48b1ed → #5B86E5)
-- Effet: Lueur très subtile (stdDeviation=0.4)
+### TYPOGRAPHIE
+- Police principale: 'Lato Light' ou équivalent moderne sans-serif
+- Taille: 44px, espacement lettres: 1.5px
+- Style: Minimaliste, épuré, moderne, ultra-lisible
+- Couleur: Dégradé doux bleu-turquoise (#36D1DC → #5B86E5)
+- Effet: Lueur très subtile pour améliorer la lisibilité
 
-SIGNATURE "BY":
-- Police: Lato Light, 8px, poids 300
-- Position: 5px sous le texte principal
-- Couleur: Gris (#888888) avec opacité 0.25
+### BRANDING DISCRET
+- Mention "by" en gris clair (opacity 0.25)
+- Texte "CodeQuantum.io" en petit format (8px)
+- Positionnement discret sous le nom principal
 
-LOGO CODEQUANTUM.IO:
-- Scale: 0.3 (30% de l'original)
-- Position: 15px à droite du "by"
-- Intégrer le SVG original sans modification:
+## SPÉCIFICATIONS TECHNIQUES
 
-<svg xmlns="http://www.w3.org/2000/svg" width="260" height="38" viewBox="0 0 300 70">
+### STRUCTURE SVG
+```xml
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
+    <!-- Définitions (dégradés, filtres, animations) -->
     <defs>
-        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#0a394a" />
-            <stop offset="50%" stop-color="#166174" />
-            <stop offset="100%" stop-color="#2587a1" />
-        </linearGradient>
-        <linearGradient id="code-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#2587a1" />
-            <stop offset="100%" stop-color="#0a394a" />
-        </linearGradient>
-        <linearGradient id="quantum-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#2587a1" />
-            <stop offset="100%" stop-color="#0a394a" />
-        </linearGradient>
+        <!-- Dégradés pour pictogramme et texte -->
+        <!-- Filtres pour effets subtils -->
+        <!-- Définitions d'animations -->
     </defs>
-    <g transform="translate(25, 35)">
-        <circle cx="0" cy="0" r="22" fill="url(#quantum-gradient)" opacity="0.9" />
-        <circle cx="0" cy="0" r="17" fill="#ffffff" opacity="0.95" />
-        <circle cx="0" cy="0" r="15" fill="url(#bg-gradient)" />
-        <path d="M-26,-18 L-38,0 L-26,18" stroke="url(#code-gradient)" stroke-width="4" fill="none" stroke-linecap="round"/>
-        <path d="M26,-18 L38,0 L26,18" stroke="url(#code-gradient)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M7,7 L14,14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
-        <path d="M-5,-5 L-11,-11" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.9" />
-    </g>
-    <g transform="translate(72, 42)">
-        <text font-family="'Raleway', Arial, sans-serif" font-size="26" font-weight="600" letter-spacing="0" text-anchor="left">
-            <tspan fill="#008bb8">Code</tspan><tspan fill="#006a8c">Quantum</tspan><tspan fill="#555555" font-weight="400">.io</tspan>
-        </text>
+    
+    <!-- Groupe principal (centrage et alignement) -->
+    <g transform="translate(250, 100)">
+        <!-- Pictogramme avec animations -->
+        <!-- Texte du nom avec effets -->
+        <!-- Signature discrète -->
     </g>
 </svg>
+```
 
-=== ANIMATIONS ET EFFETS ===
+### ANIMATIONS SUBTILES
+- Utiliser des `animateTransform` et `animate` à durée longue
+- Variations très légères pour éviter les distractions
+- Timing non synchronisé pour un effet organique
 
-DÉFINITIONS D'ANIMATIONS:
-- Flottement:
-  <animate id="float" attributeName="transform" attributeType="XML" type="translate" values="0,0; 0,-0.6; 0,0; 0,0.6; 0,0" dur="8s" repeatCount="indefinite" />
-
-- Pulsation:
-  <animate id="pulse" attributeName="opacity" values="0.7;0.8;0.7" dur="4s" repeatCount="indefinite" />
-
-- Scintillement:
-  <animate id="shimmer" attributeName="stroke-opacity" values="0.8;1;0.8" dur="5s" repeatCount="indefinite" />
-
-DÉGRADÉS ET FILTRES:
-- Dégradé principal:
-  <linearGradient id="nami-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="#36D1DC" opacity="0.94" />
-    <stop offset="50%" stop-color="#48b1ed" opacity="0.90" />
-    <stop offset="100%" stop-color="#5B86E5" opacity="0.94" />
-  </linearGradient>
-
-- Lueur subtile:
-  <filter id="text-glow" x="-20%" y="-20%" width="140%" height="140%">
-    <feGaussianBlur stdDeviation="0.4" result="blur" />
-    <feComposite in="SourceGraphic" in2="blur" operator="over" />
-  </filter>
-
-=== CONTRAINTES TECHNIQUES ===
-
-- Dimensions optimales: 500×200px
+### OPTIMISATIONS
+- IDs uniques pour tous les éléments
 - Compatibilité navigateur maximale
-- Animations performantes (<60% CPU)
-- Lisibilité garantie à toutes tailles (responsive)
-- ID uniques pour éviter les conflits
+- Structure propre et ordonnée
+- Vecteurs optimisés pour un rendu parfait à toute taille
 
-Le résultat doit être un logo SVG parfaitement exécuté, avec un équilibre visuel impeccable entre le nom de l'application, son pictogramme et la signature discrète de CodeQuantum.io. L'esthétique doit être élégante, minimaliste et contemporaine.
+## RÉSULTAT ATTENDU
+
+Un logo SVG élégant qui respecte les principes de design minimaliste moderne avec des animations subtiles et une cohérence parfaite entre pictogramme et texte. L'identité visuelle doit être distinctive, mémorable et parfaitement lisible sur tous les supports.
+
+*Note: Pour des résultats optimaux, fournir une description précise de la fonction/thématique de l'application pour adapter le pictogramme en conséquence.*
